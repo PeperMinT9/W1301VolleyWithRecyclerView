@@ -34,7 +34,7 @@ class SongViewModel(application: Application) : AndroidViewModel(application) {
     fun requestSong() {
         val request = JsonArrayRequest(
             Request.Method.GET,
-            "https://expresssongdb-stmhz.run.goorm.io", null,
+            "https://expresssongdb-stmhz.run.goorm.io/song", null,
             {
 //                Toast.makeText(getApplication(), it.toString(), Toast.LENGTH_LONG).show()
                 songs.clear()
